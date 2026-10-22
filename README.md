@@ -25,13 +25,15 @@ This project is a creative landing page designed to showcase Pikachu from Pokém
 ## 📁 Project Structure
 
 ```text
-pokemon-landing-page/
+CSS landing page 1/
 ├── pokemon.html
 ├── pokemon.css
 └── image/
     ├── dash.png
     ├── favicon.png
-    └── menu.png
+    ├── menu.png
+    ├── pokemon.png
+    └── pikachu.png
 ```
 
 ## 🚀 How to Run
