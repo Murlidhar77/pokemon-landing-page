@@ -1,4 +1,4 @@
-# pokemon-landing-page
+
 # Pokémon Landing Page ⚡
 
 A vibrant, Pokémon-inspired landing page featuring Pikachu, built using HTML and CSS.
@@ -26,12 +26,12 @@ This project is a creative landing page designed to showcase Pikachu from Pokém
 
 ```text
 pokemon-landing-page/
-├── index.html
+├── pokemon.html
 ├── pokemon.css
 └── image/
-    ├── pokemon.png
-    ├── menu.png
-    └── pikachu.png
+    ├── dash.png
+    ├── favicon.png
+    └── menu.png
 ```
 
 ## 🚀 How to Run
