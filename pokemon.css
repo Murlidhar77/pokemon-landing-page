@@ -1,0 +1,351 @@
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+body {
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: #f5f5f5;
+
+    font-family: Arial, sans-serif;
+}
+
+
+
+.container {
+    position: relative;
+
+    width: 95%;
+    max-width: 1100px;
+    height: 650px;
+
+    overflow: hidden;
+
+    border-radius: 12px;
+
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+
+
+
+.nav {
+    position: absolute;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 80px;
+
+    padding: 20px 35px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    z-index: 10;
+    background: transparent;
+}
+
+
+
+
+.pokemon-logo {
+    width: 100px;
+}
+
+
+.menu {
+    width: 28px;
+    height: 28px;
+
+    object-fit: contain;
+
+    cursor: pointer;
+}
+
+
+
+.hero {
+    position: relative;
+
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+}
+
+
+
+.hero-left {
+    position: relative;
+
+    width: 60%;
+    height: 100%;
+
+    background: #ffc900;
+}
+
+
+
+.hero-right {
+    width: 40%;
+    height: 100%;
+
+    background: #fff1c9;
+}
+
+
+
+.content {
+    position: absolute;
+
+    left: 60px;
+    top: 180px;
+
+    width: 300px;
+
+    z-index: 3;
+}
+
+
+.small-title {
+    margin-bottom: 10px;
+
+    font-size: 10px;
+    font-weight: 700;
+
+    letter-spacing: 4px;
+
+    color: #222;
+}
+
+
+
+
+h1 {
+    margin-bottom: 8px;
+
+    font-size: 52px;
+    line-height: 1;
+
+    font-weight: 800;
+
+    color: #050505;
+}
+
+
+
+.description {
+    width: 260px;
+
+    font-size: 10px;
+    line-height: 1.6;
+
+    color: #333;
+}
+
+
+
+
+.pagination {
+    margin-top: 25px;
+
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    font-size: 10px;
+    font-weight: bold;
+}
+
+
+.line {
+    width: 30px;
+    height: 1px;
+
+    background: #222;
+}
+
+
+
+
+.pikachu {
+    position: absolute;
+
+    width: 430px;
+
+    left: 60%;
+    top: 130px;
+
+    z-index: 5;
+
+    object-fit: contain;
+
+    transform: translateX(-50%);
+}
+
+
+
+.dots {
+    position: absolute;
+
+    right: 15px;
+    top: 50%;
+
+    transform: translateY(-50%);
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 8px;
+
+    z-index: 10;
+}
+
+
+.dots span {
+    width: 5px;
+    height: 5px;
+
+    border-radius: 50%;
+
+    background: #e5b800;
+}
+
+
+.dots .active {
+    width: 6px;
+    height: 6px;
+
+    background: #111;
+}
+
+
+/* =========================
+   POKEBALL DECORATION
+========================= */
+
+.pokeball {
+    position: absolute;
+
+    left: 30px;
+    bottom: -35px;
+
+    width: 100px;
+    height: 100px;
+
+    border: 6px solid rgba(180, 140, 0, 0.25);
+
+    border-radius: 50%;
+}
+
+
+.pokeball::before {
+    content: "";
+
+    position: absolute;
+
+    top: 42px;
+    left: 0;
+
+    width: 100%;
+
+    height: 6px;
+
+    background: rgba(180, 140, 0, 0.25);
+}
+
+
+.pokeball-inner {
+    position: absolute;
+
+    top: 29px;
+    left: 29px;
+
+    width: 30px;
+    height: 30px;
+
+    border: 6px solid rgba(180, 140, 0, 0.25);
+
+    border-radius: 50%;
+
+    background: #ffc900;
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 768px) {
+
+    .container {
+        height: 600px;
+    }
+
+    .hero-left {
+        width: 100%;
+    }
+
+    .hero-right {
+        width: 0;
+    }
+
+    .content {
+        left: 30px;
+        top: 160px;
+    }
+
+    .pikachu {
+        width: 330px;
+
+        left: 70%;
+        top: 180px;
+    }
+
+}
+
+
+@media (max-width: 500px) {
+
+    .container {
+        height: 700px;
+    }
+
+    .nav {
+        padding: 20px;
+    }
+
+    .content {
+        top: 150px;
+        left: 25px;
+    }
+
+    h1 {
+        font-size: 42px;
+    }
+
+    .pikachu {
+        width: 300px;
+
+        left: 65%;
+        top: 330px;
+    }
+
+    .dots {
+        right: 8px;
+    }
+
+}
